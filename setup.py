@@ -18,6 +18,12 @@ def load_source(modname, filename):
     loader.exec_module(module)
     return module
 
+def f(n):
+    r=1
+    for i in range(1,n+1):
+        r*=i
+    return r
+
 import os, json
 here = os.path.abspath(os.path.dirname(__file__))
 proj_info = json.loads(open(os.path.join(here, PROJ_METADATA), encoding='utf-8').read())
