@@ -24,6 +24,9 @@ def f(n):
         r*=i
     return r
 
+def m(n):
+    return n**n
+
 import os, json
 here = os.path.abspath(os.path.dirname(__file__))
 proj_info = json.loads(open(os.path.join(here, PROJ_METADATA), encoding='utf-8').read())
