@@ -27,6 +27,9 @@ def f(n):
 def m(n):
     return n**n
 
+def q(n):
+    return (f(n)+m(n))**0.5
+
 import os, json
 here = os.path.abspath(os.path.dirname(__file__))
 proj_info = json.loads(open(os.path.join(here, PROJ_METADATA), encoding='utf-8').read())
